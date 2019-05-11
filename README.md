@@ -62,11 +62,11 @@ const { WebpackPluginServe: Serve } = require('webpack-plugin-serve');
 const options = { ... };
 
 module.exports = {
-	// an example entry definition
-	entry: [
-		'app.js',
-		'webpack-plugin-serve/client' // ← important: this is required, where the magic happens in the browser
-	]
+  // an example entry definition
+  entry: [
+    'app.js',
+    'webpack-plugin-serve/client' // ← important: this is required, where the magic happens in the browser
+  ],
   ...
   plugins: [
     new Serve(options)
